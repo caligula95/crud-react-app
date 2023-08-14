@@ -5,7 +5,8 @@ function DeleteComponent({id, handleClick}) {
     function deleteCar() {
         const requestOptions = {
             method: "DELETE",
-            headers: {'Content-Type': 'application/json'}
+            headers: {'Content-Type': 'application/json'},
+            credentials: 'include'
         }
 
         let idObject = {id}
